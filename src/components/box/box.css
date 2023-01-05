@@ -1,0 +1,22 @@
+header {
+  cursor: pointer;
+}
+
+span {
+  font-style: italic;
+  color: purple;
+}
+
+.box-container + .box-container {
+  margin-top: 1em;
+}
+
+.box {
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.box.closed {
+  display: none;
+}

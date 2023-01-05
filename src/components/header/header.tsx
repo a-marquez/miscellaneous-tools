@@ -1,5 +1,5 @@
 import { component$, useStylesScoped$ } from '@builder.io/qwik';
-import { QwikLogo } from '../icons/qwik';
+import { Link } from '@builder.io/qwik-city';
 import styles from './header.css?inline';
 
 export default component$(() => {
@@ -7,26 +7,18 @@ export default component$(() => {
 
   return (
     <header>
-      <div class="logo">
-        <a href="https://qwik.builder.io/" target="_blank" title="qwik">
-          <QwikLogo />
-        </a>
-      </div>
       <ul>
         <li>
-          <a href="https://qwik.builder.io/docs/components/overview/" target="_blank">
-            Docs
-          </a>
+          <Link href="/">
+            Miscellaneous Tools
+          </Link>
         </li>
+      </ul>
+      <ul>
         <li>
-          <a href="https://qwik.builder.io/examples/introduction/hello-world/" target="_blank">
-            Examples
-          </a>
-        </li>
-        <li>
-          <a href="https://qwik.builder.io/tutorial/welcome/overview/" target="_blank">
-            Tutorials
-          </a>
+          <Link href="/pz-clock">
+            PZ Clock
+          </Link>
         </li>
       </ul>
     </header>
